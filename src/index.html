@@ -1,252 +1,484 @@
-<!doctype html>
+<!DOCTYPE html>
 <html data-theme="night" class="scroll-smooth">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio || TailwindCSS Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="output.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link href="output.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
     <style>
-        .box {
-            margin: auto;
-        }
+      .box {
+        margin: auto;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="box">
-        <!-- Header -->
-        <header>
-            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-            <nav class="bg-white border-gray-200 dark:bg-gray-900"> <!-- fixed top-0 left-0 w-full z-10 -->
-                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                    <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Porca</span>
-                    </a>
+      <!-- Header -->
+      <header>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <nav class="bg-white border-gray-200 dark:bg-gray-900">
+          <!-- fixed top-0 left-0 w-full z-10 -->
+          <div
+            class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto"
+          >
+            <a
+              href="https://flowbite.com/"
+              class="flex items-center space-x-3 rtl:space-x-reverse"
+            >
+              <img
+                src="https://flowbite.com/docs/images/logo.svg"
+                class="h-8"
+                alt="Flowbite Logo"
+              />
+              <span
+                class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+                >Porca</span
+              >
+            </a>
 
-                    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                        <button type="button"
-                            class="relative overflow-hidden text-white bg-gradient-to-r from-blue-600 to-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Hire Me!</button>
-                        <button data-collapse-toggle="navbar-cta" type="button"
-                            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                            aria-controls="navbar-cta" aria-expanded="false">
-                        
-                            <span class="sr-only">Open main menu</span>
-                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                viewBox="0 0 17 14">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M1 1h15M1 7h15M1 13h15"/>
-                            </svg>
-                        </button>
-                    </div>
-
-                    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
-                        <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                            <li>
-                                <a href="#hero" class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500" aria-current="page">Home</a>
-                            </li>
-
-                            <li>
-                                <a href="#quality_services" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Works</a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Resume</a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Skills</a>
-                            </li>
-            
-                            <li>
-                                <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <main>
-            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Home Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-            <section id="hero" class="py-5 md:pt-10 md:pb-10" style="position: relative;
-            background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8));">
-                <!-- blob -->
-                <div class="absolute right-0 top-[-20%] w-80 h-80 bg-blue-500 mix-blend-screen rounded-full blur-[150px] opacity-50"></div>
-
-                <!-- bg-image -->
-                <div class="container" style=" max-width: 1100px; margin: auto;">
-                    <div class="hidden">
-                        <p>hi</p>
-                    </div>   
-
-                <!-- Hero Content -->
-            <div class="flex items-center gap-5">
-                <div class="space-y-2 md:w-1/2">
-                    <h3 class="mb-0 text-2xl lg:text-4xl font-bold text-gray-900 dark:text-white md:text-5xl">I am Cantika</h3>
-                    <h1 class="mb-0 text-4xl font-bold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r to-blue-300 from-blue-800 dark:to-white">Web Developer +</span>
-                    </h1>     
-                    <h1 class="mb-2 text-4xl font-bold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r to-blue-300 from-blue-800 dark:to-white">UI/UX Designer</span>
-                    </h1>
-
-                    <div class="relative flex justify-center md:hidden">
-                        <!-- blob -->
-                        <div class="absolute left-0 bottom-0 w-80 h-80 bg-blue-500 mix-blend-screen rounded-full blur-[150px] opacity-50"></div>
-                        <img src="../images/person.jpg" alt="UI/UX Designer" class="my-10 max-w-[90%] duration-300 origin-center rotate-[4.5deg] border-2 border-blue-800 rounded-[38px] hover:rotate-0 hover:border-blue-500">
-                    </div>
-
-                    <p class="max-w-xl text-xl pb-5 mb-3 text-gray-500 dark:text-gray-400">Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.</p>
-
-                    <div class="flex items-center flex-wrap gap-5">
-                        <button class="flex items-center space-x-2 btn-outline border border-blue-800 text-blue-800 py-4 px-9 rounded-full hover:bg-blue-800 hover:text-white duration-300">
-                            Download CV
-                            <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 18">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 1v11m0 0 4-4m-4 4L4 8m11 4v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3"/>
-                            </svg>
-                        </button>
-                    </div>         
-                </div>
-
-                <!-- hero image -->
-                <div class="relative hidden md:w-1/2 md:flex justify-center">
-                <!-- blob -->
-                    <div class="absolute left-0 bottom-0 w-80 h-80 bg-blue-500 mix-blend-screen rounded-full blur-[150px] opacity-50"></div>
-                        <img src="../images/person.jpg" alt="UI/UX Designer" class="my-10 md:w-full lg:max-w-[50%] ml-50 duration-300 origin-center rotate-[4.5deg] border-2 border-blue-800 rounded-[38px] hover:rotate-0 hover:border-blue-500">
-                    </div>
-                </div>
-    
-                <!-- hero footer -->
-                <div class="text-white grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 py-10">
-                    <div class="flex items-center gap-3">
-                        <p class="text-white text-5xl lg:text-6xl font-bold">12</p>
-                        <p>
-                            Years of <br> Experience
-                        </p>
-                    </div>
-        
-                    <div class="flex items-center gap-3">
-                        <p class="text-white text-5xl lg:text-6xl font-bold">50+</p>
-                        <p>
-                            Project <br> Completed
-                        </p>
-                    </div>
-
-                    <div class="flex items-center gap-3">
-                        <p class="text-white text-5xl lg:text-6xl font-bold">1.5k</p>
-                        <p>
-                            Happy <br> Clients
-                        </p>
-                    </div>
-
-                    <div class="flex items-center gap-3">
-                        <p class="text-white text-5xl lg:text-6xl font-bold">12</p>
-                        <p>
-                            Years of <br> Experience
-                        </p>
-                    </div>
-                </div>
+            <div
+              class="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse"
+            >
+              <button
+                type="button"
+                class="relative px-4 py-2 overflow-hidden text-sm font-medium text-center text-white rounded-full bg-gradient-to-r from-blue-600 to-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Hire Me!
+              </button>
+              <button
+                data-collapse-toggle="navbar-cta"
+                type="button"
+                class="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-cta"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Open main menu</span>
+                <svg
+                  class="w-5 h-5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 17 14"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 1h15M1 7h15M1 13h15"
+                  />
+                </svg>
+              </button>
             </div>
-            </section>
 
-            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Services Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-            <section id="quality_services" class="py-5 md:pt-0 md:pb-10 bg-white dark:bg-slate-950">
-                <div class="container" style=" max-width: 1100px; margin: auto;">               
-                <div class="flex flex-col items-center gap-5 text-center">
-                    <h2 class="mb-4 mt-20 text-4xl font-bold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r to-blue-300 from-blue-800 dark:to-white">My Quality Services</span></h2>
-                    <p class="max-w-2xl">Track work across the enterprise through an open, collaborative platform.</p>
+            <div
+              class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+              id="navbar-cta"
+            >
+              <ul
+                class="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+              >
+                <li>
+                  <a
+                    href="#hero"
+                    class="block px-3 py-2 text-white bg-blue-700 rounded md:p-0 md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
+                    aria-current="page"
+                    >Home</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#quality_services"
+                    class="block px-3 py-2 text-gray-900 rounded md:p-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    >Services</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="block px-3 py-2 text-gray-900 rounded md:p-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    >Works</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="block px-3 py-2 text-gray-900 rounded md:p-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    >Resume</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="block px-3 py-2 text-gray-900 rounded md:p-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    >Skills</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="block px-3 py-2 text-gray-900 rounded md:p-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Home Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <section
+          id="hero"
+          class="py-5 md:pt-20 md:pb-10"
+          style="
+            position: relative;
+            background: linear-gradient(
+              to bottom,
+              transparent,
+              rgba(0, 0, 0, 0.8)
+            );
+          "
+        >
+          <!-- blob -->
+          <div
+            class="absolute right-0 top-[-20%] w-80 h-80 bg-blue-500 mix-blend-screen rounded-full blur-[150px] opacity-50"
+          ></div>
+
+          <!-- bg-image -->
+          <div class="container" style="max-width: 1100px; margin: auto">
+            <div class="hidden">
+              <p>hi</p>
+            </div>
+
+            <!-- Hero Content -->
+            <div class="flex items-center gap-5">
+              <div class="space-y-2 md:w-1/2">
+                <h3
+                  class="mb-0 text-2xl font-bold text-gray-900 lg:text-4xl dark:text-white md:text-5xl"
+                >
+                  I am Cantika
+                </h3>
+                <h1
+                  class="mb-0 text-4xl font-bold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"
+                >
+                  <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r to-blue-300 from-blue-800 dark:to-white"
+                    >Web Developer +</span
+                  >
+                </h1>
+                <h1
+                  class="mb-2 text-4xl font-bold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"
+                >
+                  <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r to-blue-300 from-blue-800 dark:to-white"
+                    >UI/UX Designer</span
+                  >
+                </h1>
+
+                <div class="relative flex justify-center md:hidden">
+                  <!-- blob -->
+                  <div
+                    class="absolute left-0 bottom-0 w-80 h-80 bg-blue-500 mix-blend-screen rounded-full blur-[150px] opacity-50"
+                  ></div>
+                  <img
+                    src="images/person.jpg"
+                    alt="UI/UX Designer"
+                    class="my-10 max-w-[90%] duration-300 origin-center rotate-[4.5deg] border-2 border-blue-800 rounded-[38px] hover:rotate-0 hover:border-blue-500"
+                  />
                 </div>
 
-                <!-- list section -->
-                <div class="my-10">
-                    <!-- item-1 -->
-                    <div class="service_item flex flex-wrap items-center gap-3 px-4 py-8 group-hover:text-white border-b border-blue-900 hover:bg-blue-900 cursor-pointer duration-300 group">
-                        <div class="text-xl font-bold flex items-center group-hover:text-white gap-3 md:text-2xl md:w-[40%] text-blue-900">
-                            <p class="duration-300 group-hover:text-white">01</p>
-                            <p class="duration-300 text-white">Branding Design</p>
-                        </div>
-                
-                        <div class="ml-auto text-2xl origin-center rotate-45 duration-300 md:order-last">
-                            <svg class="group-hover:-rotate-90 w-5 h-5 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                            </svg>
-                        </div>
-                
-                        <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
-                            <p>Track work across the enterprise through an open, collaborative platform. Track work across the enterprise through an open.</p>
-                        </div>
-                    </div>
+                <p
+                  class="max-w-xl pb-5 mb-3 text-xl text-gray-500 dark:text-gray-400"
+                >
+                  Track work across the enterprise through an open,
+                  collaborative platform. Link issues across Jira and ingest
+                  data from other software development tools, so your IT support
+                  and operations teams have richer contextual information to
+                  rapidly respond to requests, incidents, and changes.
+                </p>
 
-                    <!-- item-2 -->
-                    <div class="service_item flex flex-wrap items-center gap-3 px-4 py-8 group-hover:text-white border-b border-blue-900 hover:bg-blue-900 cursor-pointer duration-300 group">
-                        <div class="text-xl font-bold flex items-center group-hover:text-white gap-3 md:text-2xl md:w-[40%] text-blue-900">
-                            <p class="duration-300 group-hover:text-white">02</p>
-                            <p class="duration-300 text-white">Web Design</p>
-                        </div>
-                
-                        <div class="ml-auto text-2xl origin-center rotate-45 duration-300 md:order-last">
-                            <svg class="group-hover:-rotate-90 w-5 h-5 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                            </svg>
-                        </div>
-                
-                        <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
-                            <p>Track work across the enterprise through an open, collaborative platform. Track work across the enterprise through an open.</p>
-                        </div>
-                    </div>
-
-                    <!-- item-3 -->
-                    <div class="service_item flex flex-wrap items-center gap-3 px-4 py-8 group-hover:text-white border-b border-blue-900 hover:bg-blue-900 cursor-pointer duration-300 group">
-                        <div class="text-xl font-bold flex items-center group-hover:text-white gap-3 md:text-2xl md:w-[40%] text-blue-900">
-                            <p class="duration-300 group-hover:text-white">03</p>
-                            <p class="duration-300 text-white">UI/UX Design</p>
-                        </div>
-                
-                        <div class="ml-auto text-2xl origin-center rotate-45 duration-300 md:order-last">
-                            <svg class="group-hover:-rotate-90 w-5 h-5 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                            </svg>
-                        </div>
-                
-                        <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
-                            <p>Track work across the enterprise through an open, collaborative platform. Track work across the enterprise through an open.</p>
-                        </div>
-                    </div>
-
-                    <!-- item-4 -->
-                    <div class="service_item flex flex-wrap items-center gap-3 px-4 py-8 group-hover:text-white border-b border-blue-900 hover:bg-blue-900 cursor-pointer duration-300 group">
-                        <div class="text-xl font-bold flex items-center group-hover:text-white gap-3 md:text-2xl md:w-[40%] text-blue-900">
-                            <p class="duration-300 group-hover:text-white">04</p>
-                            <p class="duration-300 text-white">Graphics Design</p>
-                        </div>
-                
-                        <div class="ml-auto text-2xl origin-center rotate-45 duration-300 md:order-last">
-                            <svg class="group-hover:-rotate-90 w-5 h-5 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                            </svg>
-                        </div>
-                
-                        <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
-                            <p>Track work across the enterprise through an open, collaborative platform. Track work across the enterprise through an open.</p>
-                        </div>
-                    </div>
+                <div class="flex flex-wrap items-center gap-5">
+                  <button
+                    class="flex items-center py-4 space-x-2 text-blue-800 duration-300 border border-blue-800 rounded-full btn-outline px-9 hover:bg-blue-800 hover:text-white"
+                  >
+                    Download CV
+                    <svg
+                      class="w-4 h-4 ml-2"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 16 18"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M8 1v11m0 0 4-4m-4 4L4 8m11 4v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3"
+                      />
+                    </svg>
+                  </button>
                 </div>
-                
+              </div>
+
+              <!-- hero image -->
+              <div class="relative justify-center hidden md:w-1/2 md:flex">
+                <!-- blob -->
+                <div
+                  class="absolute left-0 bottom-0 w-80 h-80 bg-blue-500 mix-blend-screen rounded-full blur-[150px] opacity-50"
+                ></div>
+                <img
+                  src="../images/person.jpg"
+                  alt="UI/UX Designer"
+                  class="my-10 md:w-full lg:max-w-[50%] ml-50 duration-300 origin-center rotate-[4.5deg] border-2 border-blue-800 rounded-[38px] hover:rotate-0 hover:border-blue-500"
+                />
+              </div>
+            </div>
+
+            <!-- hero footer -->
+            <div
+              class="grid grid-cols-1 gap-10 py-10 text-white sm:grid-cols-2 lg:grid-cols-4"
+            >
+              <div class="flex items-center gap-3">
+                <p class="text-5xl font-bold text-white lg:text-6xl">12</p>
+                <p>
+                  Years of <br />
+                  Experience
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <p class="text-5xl font-bold text-white lg:text-6xl">50+</p>
+                <p>
+                  Project <br />
+                  Completed
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <p class="text-5xl font-bold text-white lg:text-6xl">1.5k</p>
+                <p>
+                  Happy <br />
+                  Clients
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <p class="text-5xl font-bold text-white lg:text-6xl">12</p>
+                <p>
+                  Years of <br />
+                  Experience
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Services Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <section
+          id="quality_services"
+          class="py-5 bg-white md:pt-0 md:pb-10 dark:bg-slate-950"
+        >
+          <div class="container" style="max-width: 1100px; margin: auto">
+            <div class="flex flex-col items-center gap-5 text-center">
+              <h2
+                class="mt-20 mb-4 text-4xl font-bold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"
+              >
+                <span
+                  class="text-transparent bg-clip-text bg-gradient-to-r to-blue-300 from-blue-800 dark:to-white"
+                  >My Quality Services</span
+                >
+              </h2>
+              <p class="max-w-2xl">
+                Track work across the enterprise through an open, collaborative
+                platform.
+              </p>
+            </div>
+
+            <!-- list section -->
+            <div class="my-10">
+              <!-- item-1 -->
+              <div
+                class="flex flex-wrap items-center gap-3 px-4 py-8 duration-300 border-b border-blue-900 cursor-pointer service_item group-hover:text-white hover:bg-blue-900 group"
+              >
+                <div
+                  class="text-xl font-bold flex items-center group-hover:text-white gap-3 md:text-2xl md:w-[40%] text-blue-900"
+                >
+                  <p class="duration-300 group-hover:text-white">01</p>
+                  <p class="text-white duration-300">Branding Design</p>
                 </div>
-            </section>
-        </main>
+
+                <div
+                  class="ml-auto text-2xl duration-300 origin-center rotate-45 md:order-last"
+                >
+                  <svg
+                    class="w-5 h-5 text-gray-800 group-hover:-rotate-90 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </div>
+
+                <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
+                  <p>
+                    Track work across the enterprise through an open,
+                    collaborative platform. Track work across the enterprise
+                    through an open.
+                  </p>
+                </div>
+              </div>
+
+              <!-- item-2 -->
+              <div
+                class="flex flex-wrap items-center gap-3 px-4 py-8 duration-300 border-b border-blue-900 cursor-pointer service_item group-hover:text-white hover:bg-blue-900 group"
+              >
+                <div
+                  class="text-xl font-bold flex items-center group-hover:text-white gap-3 md:text-2xl md:w-[40%] text-blue-900"
+                >
+                  <p class="duration-300 group-hover:text-white">02</p>
+                  <p class="text-white duration-300">Web Design</p>
+                </div>
+
+                <div
+                  class="ml-auto text-2xl duration-300 origin-center rotate-45 md:order-last"
+                >
+                  <svg
+                    class="w-5 h-5 text-gray-800 group-hover:-rotate-90 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </div>
+
+                <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
+                  <p>
+                    Track work across the enterprise through an open,
+                    collaborative platform. Track work across the enterprise
+                    through an open.
+                  </p>
+                </div>
+              </div>
+
+              <!-- item-3 -->
+              <div
+                class="flex flex-wrap items-center gap-3 px-4 py-8 duration-300 border-b border-blue-900 cursor-pointer service_item group-hover:text-white hover:bg-blue-900 group"
+              >
+                <div
+                  class="text-xl font-bold flex items-center group-hover:text-white gap-3 md:text-2xl md:w-[40%] text-blue-900"
+                >
+                  <p class="duration-300 group-hover:text-white">03</p>
+                  <p class="text-white duration-300">UI/UX Design</p>
+                </div>
+
+                <div
+                  class="ml-auto text-2xl duration-300 origin-center rotate-45 md:order-last"
+                >
+                  <svg
+                    class="w-5 h-5 text-gray-800 group-hover:-rotate-90 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </div>
+
+                <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
+                  <p>
+                    Track work across the enterprise through an open,
+                    collaborative platform. Track work across the enterprise
+                    through an open.
+                  </p>
+                </div>
+              </div>
+
+              <!-- item-4 -->
+              <div
+                class="flex flex-wrap items-center gap-3 px-4 py-8 duration-300 border-b border-blue-900 cursor-pointer service_item group-hover:text-white hover:bg-blue-900 group"
+              >
+                <div
+                  class="text-xl font-bold flex items-center group-hover:text-white gap-3 md:text-2xl md:w-[40%] text-blue-900"
+                >
+                  <p class="duration-300 group-hover:text-white">04</p>
+                  <p class="text-white duration-300">Graphics Design</p>
+                </div>
+
+                <div
+                  class="ml-auto text-2xl duration-300 origin-center rotate-45 md:order-last"
+                >
+                  <svg
+                    class="w-5 h-5 text-gray-800 group-hover:-rotate-90 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </div>
+
+                <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
+                  <p>
+                    Track work across the enterprise through an open,
+                    collaborative platform. Track work across the enterprise
+                    through an open.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
-
-</body>
+  </body>
 </html>
